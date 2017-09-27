@@ -19,6 +19,7 @@ import java.io.InputStream;
 import java.util.List;
 
 /**
+ * Connects the MusicEvent array to the view (activity_event_list)
  *
  * @author Devon Tallcott
  * @version 2.0
@@ -35,6 +36,13 @@ public class EventListAdapter extends ArrayAdapter<MusicEvent>
     //context = Activity that uses the adapter (EventListActivity)
     //resource = Layout file to inflate (R.layout.music_event_list_item)
     //objects = list of Music Events
+
+    /**
+     * Creates and array adapter to then connect our events to the view
+     * @param context
+     * @param resource
+     * @param allMusicEvents
+     */
     public EventListAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<MusicEvent> allMusicEvents)
     {
         super(context, resource, allMusicEvents);
@@ -46,6 +54,9 @@ public class EventListAdapter extends ArrayAdapter<MusicEvent>
     //Need to override the method getView
     @NonNull
     @Override
+    /**
+     * Inflates our layout file with the list of Music Events
+     */
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
     {
        //Use "inflater" to inflate the custom layout (R.layout.music_event_list_item)

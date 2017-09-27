@@ -10,6 +10,15 @@ import android.widget.ListView;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Takes the Music Event list from the JSONLoader and creates and intent.
+ * Sends all the details of the selected event to EventDetailsActivity
+ *
+ * @author Devon Tallcott
+ * @version 2.0
+ *
+ * Created on 09/26/17
+ */
 public class EventListActivity extends ListActivity {
 
     private List<MusicEvent> mAllEventsList;

@@ -13,6 +13,14 @@ import android.widget.TextView;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ *Receives intent and connects these details to the view (music_event_list_item).
+ *
+ * @author Devon Tallcott
+ * @version 2.0
+ *
+ * Created on 09/26/17
+ */
 public class EventDetailsActivity extends AppCompatActivity {
 
     @Override
